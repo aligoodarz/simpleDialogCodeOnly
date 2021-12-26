@@ -2,6 +2,19 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QLabel>
+#include <QPushButton>
+#include <QComboBox>
+#include <QLineEdit>
+#include <QFile>
+#include <QDebug>
+
+#include <QJsonDocument>
+#include <QJsonParseError>
+#include <QJsonObject>
+#include <QJsonValue>
+#include <QJsonArray>
+#include <QMessageBox>
 
 
 class Widget : public QWidget

@@ -1,16 +1,4 @@
 #include "widget.h"
-#include <QLabel>
-#include <QPushButton>
-#include <QComboBox>
-#include <QLineEdit>
-#include <QFile>
-#include <QDebug>
-
-#include <QJsonDocument>
-#include <QJsonParseError>
-#include <QJsonObject>
-#include <QJsonValue>
-#include <QJsonArray>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
@@ -144,7 +132,7 @@ void Widget::setupUi()
             {
                 qDebug() << "file open failed";
             }
-
+    QMessageBox::information(this,"Success","The input has been saved");
 
     });
 
